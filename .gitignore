@@ -1,0 +1,5 @@
+# Your personal progress stays on your machine
+data/
+node_modules/
+.DS_Store
+test/screenshots/

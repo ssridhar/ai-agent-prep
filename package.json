@@ -1,0 +1,12 @@
+{
+  "name": "ai-agent-prep",
+  "version": "1.0.0",
+  "description": "A daily 6-week prep app for a Principal Engineer (agent framework) role. Local, zero dependencies.",
+  "private": true,
+  "scripts": {
+    "start": "node server.js --open",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": { "node": ">=18" },
+  "license": "MIT"
+}

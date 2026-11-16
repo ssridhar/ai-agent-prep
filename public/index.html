@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Agent Platform Prep · 6 weeks</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%234f46e5'/><text x='16' y='22' font-size='16' text-anchor='middle' fill='white' font-family='sans-serif'>6w</text></svg>">
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Main">
+      <div class="brand">
+        <div class="brand-mark">6w</div>
+        <div>
+          <div class="brand-title">Agent Platform Prep</div>
+          <div class="brand-sub">Principal Engineer track</div>
+        </div>
+      </div>
+      <a href="#/today" data-route="today">Today</a>
+      <a href="#/plan" data-route="plan">6-week plan</a>
+      <a href="#/project" data-route="project">Project</a>
+      <a href="#/videos" data-route="videos">Videos</a>
+      <a href="#/interview" data-route="interview">Interview prep</a>
+      <a href="#/resources" data-route="resources">Resources</a>
+      <a href="#/settings" data-route="settings">Settings</a>
+      <div class="sidebar-foot">
+        <div class="ring-wrap"><svg viewBox="0 0 36 36" class="ring"><circle cx="18" cy="18" r="15.5" class="ring-bg"/><circle cx="18" cy="18" r="15.5" class="ring-fg" id="ring-fg"/></svg><span id="ring-pct">0%</span></div>
+        <div class="foot-stats"><div id="foot-streak">0-day streak</div><div id="save-status" class="muted">Not saved yet</div></div>
+      </div>
+    </nav>
+    <main id="main" tabindex="-1"></main>
+  </div>
+
+  <div id="video-modal" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="vm-title">
+    <div class="modal-box">
+      <div class="modal-head">
+        <div><div id="vm-title" class="modal-title"></div><div id="vm-speaker" class="muted"></div></div>
+        <button class="icon-btn" id="vm-close" aria-label="Close video">✕</button>
+      </div>
+      <div class="video-frame"><iframe id="vm-iframe" title="Video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+      <div class="modal-foot">
+        <p id="vm-why" class="muted"></p>
+        <div class="row">
+          <a id="vm-yt" target="_blank" rel="noopener" class="btn ghost">Open on YouTube ↗</a>
+          <button id="vm-watched" class="btn primary">Mark watched</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
